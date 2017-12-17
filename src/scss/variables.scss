@@ -1,0 +1,27 @@
+// landscape phones, 480px and up
+$screen-sm-min: 480px;
+
+// tablets devices, 768px and up
+$screen-md-min: 768px;
+
+// desktops devices, 992px and up
+$screen-lg-min: 992px;
+
+// large desktops, 1200px and up
+$screen-xlg-min: 1200px;
+
+// COLORS
+$yellow:#ffde00;
+$yellow--dark:#8b7900;
+$gray--lighten: #f5f5f5;
+$gray--light: #efefef;
+$gray: #a1a1a1;
+$gray--dark: #5b6163;
+$gray--black: #252525;
+
+// TEXT
+$text-gray: #a1a1a1;
+$text-gray--dark: #575757 ;
+
+$font-family--opensans: 'Open Sans', Arial, Helvetica, sans-serif;
+$font-family--ralewai: 'Raleway', Arial, Helvetica, sans-serif;
