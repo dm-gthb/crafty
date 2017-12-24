@@ -1,0 +1,52 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all .3s ease-out;
+
+  &--learn-more {
+    padding: 12px 40px;
+    border: 2px solid white;
+    min-width: 185px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: $font-family--ralewai;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: auto;
+
+    &:hover {
+      border-color: $yellow;
+      color: $yellow;
+    }
+  }
+
+  &--send {
+    padding: 25px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text-gray--darken;
+    background: $yellow;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: $screen-sm-min) {
+      width: auto;
+      padding: 25px 83px;
+    }
+
+    &:hover {
+      background: $yellow--dark;
+      color: $text-gray;
+    }
+  }
+}

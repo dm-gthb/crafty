@@ -1,0 +1,43 @@
+.main-nav {
+  display: none;
+  @media screen and (min-width: $screen-md-min) {
+    display: block;
+  }
+
+
+  padding: 75px 0;
+
+  &__container {
+    @include container();
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: $screen-xlg-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    padding: 8px 18px;
+    border: 1px solid transparent;
+    color: $text-gray--mid-dark;
+    font-size: 18px;
+    font-family: $font-family--ralewai;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-gray--darken;
+    }
+
+    &--active {
+      border-color: $yellow;
+    }
+  }
+}

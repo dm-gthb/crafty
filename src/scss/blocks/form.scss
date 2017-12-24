@@ -1,0 +1,65 @@
+.form {
+  padding: 30px 0;
+  text-align: center;
+
+  @media screen and (min-width: $screen-md-min) {
+    padding-top: 110px;
+    padding-bottom: 125px;
+  }
+
+  &__container {
+    @include container();
+  }
+
+  &__group {
+
+    @media screen and (min-width: $screen-md-min) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__input {
+    display: block;
+    padding: 15px;
+    border: 1px solid $gray;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2.6px;
+    color: $text-gray--dark;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (min-width: $screen-md-min) {
+      flex: auto;
+      max-width: 32%;
+      padding: 25px 18px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__textarea {
+    display: block;
+    padding: 15px;
+    border: 1px solid $gray;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: 2.6px;
+    color: $text-gray--dark;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (min-width: $screen-md-min) {
+      min-height: 100px;
+      margin-bottom: 35px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      min-height: 205px;
+    }
+  }
+}

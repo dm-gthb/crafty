@@ -1,0 +1,100 @@
+.features {
+  background-color: $gray--lighten;
+  padding-top: 65px;
+  padding-bottom: 130px;
+
+  &__container {
+    @include container();
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @media screen and (min-width: $screen-md-min) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    // width: 45%;
+    // max-width: 415px;
+    padding-left: 125px;
+    margin-bottom: 40px;
+    position: relative;
+
+    @media screen and (min-width: $screen-md-min) {
+      width: 45%;
+      max-width: 415px;
+      padding-left: 125px;
+      margin-bottom: 40px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      content: '';
+      width: 102px;
+      height: 102px;
+      border: 1px solid $gray--black;
+    }
+
+    &--light {
+
+      .features__item-title {
+        color: $yellow;
+      }
+
+      &::after {
+        background: url("../../img/light.svg");
+        background-repeat: no-repeat;
+        background-size: 36px 36px;
+        background-position: 35px 33px;
+        background-color: $yellow;
+        border: transparent;
+      }
+    }
+
+    &--tool::after {
+      background: url("../../img/tool.svg");
+      background-repeat: no-repeat;
+      background-size: 36px 36px;
+      background-position: 35px 33px;
+    }
+
+    &--car::after {
+      background: url("../../img/delivery.svg");
+      background-repeat: no-repeat;
+      background-size: 36px 36px;
+      background-position: 35px 33px;
+    }
+
+    &--person::after {
+      background: url("../../img/person.svg");
+      background-repeat: no-repeat;
+      background-size: 36px 36px;
+      background-position: 35px 33px;
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    line-height: 1.08;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-gray--darken;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 1.86;
+    font-weight: 300;
+    margin: 0;
+  }
+}

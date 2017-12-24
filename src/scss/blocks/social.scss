@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+
+  &__link {
+    width: 45px;
+    height: 45px;
+    margin-right: 14px;
+    position: relative;
+
+    @media screen and (min-width: $screen-md-min) {
+      width: 55px;
+      height: 55px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--dribbble {
+      background: url("../../img/behance.svg") no-repeat center;
+    }
+
+    &--facebook {
+      background: url("../../img/behance.svg") no-repeat center;
+    }
+
+    &--behance {
+      background: url("../../img/behance.svg") no-repeat center;
+    }
+  }
+}

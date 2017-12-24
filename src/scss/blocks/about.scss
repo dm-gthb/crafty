@@ -1,0 +1,44 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+  // position: relative;
+
+  // &::after {
+  //   content: '';
+  //   border: 1px solid red;
+  //   width: 70%;
+  //   max-width: 855px;
+  //   height: 256px;
+  //   position: absolute;
+  //   top: 50px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   background-image: url('../../img/iMac.png');
+  //   background-repeat: no-repeat;
+  //   background-position: 50% 50%;
+  //   background-size: 100% auto;
+  // }
+
+
+  &__container {
+    @include container();
+  }
+
+  &__title {
+    @include section-title();
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    @include section-description();
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 855px;
+    margin: 0 auto;
+    margin-bottom: 135px;
+  }
+}

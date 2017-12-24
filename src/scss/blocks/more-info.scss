@@ -1,0 +1,18 @@
+.more-info {
+  padding-top: 150px;
+  padding-bottom: 145px;
+  background: $gray--black;
+
+  &__container {
+    @include container();
+  }
+
+  &__title {
+    @include section-title();
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    @include section-description();
+  }
+}

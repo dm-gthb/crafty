@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800" rel="stylesheet">
@@ -9,126 +10,149 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="container">
-      <img src="" alt="crafty" class="logo">
-      <button class="toggler"></button>
-      <nav class="page-nav">
-        <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
-        </ul>
-      </nav>
+    <div class="page-header__container">
+      <div class="page-header__top">
+        <img src="img/Logo@3x.png" alt="crafty" class="main-logo" width="85" height="35" class="logo">
+        <button class="toggler" id="toggler" role="button">
+          <span>Menu</span>
+        </button>
+        <nav class="page-nav">
+          <ul class="page-nav__list">
+            <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
+            <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
+            <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
+            <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
+            <li class="page-nav__item"><a href="#" class="page-nav__link" title="Lorem">Lorem</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__promo">
+        <h1 class="page-header__title">Lorem ipsum dolor sit amet consectetur adipiscing elitiam</h1>
+        <p class="page-header__description">Etiam non nunc fermentum ante iaculis ultricies. Aenean posuere tincidunt elit, et egestas leo semper ut. Etiam tincidunt, ligula ac sollicitudin placerat, dolor nulla ultrices magna, eget tristique diam tellus sit amet erat.</p>
+        <a href="#" class="btn btn--learn-more" title="Learn more">Learn more</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="promo">
-      <div class="container">
-        <h1 class="promo__title">Lorem ipsum dolor sit amet consectetur adipiscing elitiam</h1>
-        <p class="promo__description">Etiam non nunc fermentum ante iaculis ultricies. Aenean posuere tincidunt elit, et egestas leo semper ut. Etiam tincidunt, ligula ac sollicitudin placerat, dolor nulla ultrices magna, eget tristique diam tellus sit amet erat.</p>
-        <a href="" class="btn btn--learn-more">Learn more</a>
-      </div>
-    </section>
+  <section class="about">
+    <div class="about__container">
+      <img src="img/iMac.png" alt="" class="about__img">
+      <h2 class="about__title">We’re  crafty</h2>
+      <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. </p>
+    </div>
+  </section>
 
-    <section class="about">
-      <div class="container">
-        <h2 class="about__title">We’re  crafty</h2>
-        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. </p>
-      </div>
-    </section>
+  <div class="features">
+    <div class="features__container">
+      <ul class="features__list">
+        <li class="features__item features__item--light">
+          <h3 class="features__item-title">We’re creative</h3>
+          <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
+        </li>
+        <li class="features__item features__item--car">
+          <h3 class="features__item-title">We work hard</h3>
+          <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
+        </li>
+        <li class="features__item features__item--tool">
+          <h3 class="features__item-title">Deliver on time</h3>
+          <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
+        </li>
+        <li class="features__item features__item--person">
+          <h3 class="features__item-title">Unlimited support</h3>
+          <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="features">
-      <div class="container">
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__item-title">We’re creative</h3>
-            <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-title">We work hard</h3>
-            <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-title">Deliver on time</h3>
-            <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-title">Unlimited support</h3>
-            <p class="features__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-          </li>
+  <section class="more-info">
+    <div class="more-info__container">
+      <h2 class="more-info__title">We’re creative </h2>
+      <p class="more-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. </p>
+    </div>
+  </section>
+
+  <nav class="main-nav">
+    <div class="main-nav__container">
+      <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active" title="All">All</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link" title="Branding">Branding</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link" title="Web">Web</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link" title="Photography">Photography</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link" title="Ui/ux">Ui/ux</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link" title="Development">Development</a></li>
         </ul>
       </div>
+  </nav>
+
+  <div class="projects">
+    <div class="projects__item projects__item--thick">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
     </div>
-
-    <section class="more-info">
-      <div class="container">
-        <h2 class="more-info__title">We’re creative </h2>
-        <p class="more-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. </p>
-      </div>
-    </section>
-
-    <nav class="main-nav">
-      <div class="container">
-        <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link" title="All">All</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link" title="Branding">Branding</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link" title="Web">Web</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link" title="Photography">Photography</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link" title="Ui/ux">Ui/ux</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link" title="Development">Development</a></li>
-          </ul>
-        </div>
-    </nav>
-
-    <div class="projects">
-      <div class="projects__item"></div>
-      <div class="projects__item"></div>
-      <div class="projects__item"></div>
-      <div class="projects__item"></div>
-      <div class="projects__item"></div>
-      <div class="projects__item"></div>
-      <div class="projects__item">
-        <h3 class="projects__item-title">Project title</h3>
-        <p class="projects__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien.</p>
-      </div>
-      <div class="projects__item"></div>
+    <div class="projects__item projects__item--thick">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
     </div>
-
-    <section class="in-touch">
-      <div class="container">
-        <h2 class="in-touch__title">Get in touch</h2>
-        <p class="in-touch__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. </p>
-      </div>
-    </section>
-
-    <div class="container">
-      <form action="" class="form">
-        <div class="form__group">
-          <input type="text" class="form__input" placeholder="your name">
-          <input type="email" class="form__input" placeholder="your email">
-          <input type="text" class="form__input" placeholder="subject">
-        </div>
-        <textarea class="form__textarea">Your massage text</textarea>
-        <button class="btn btn--send">Click to send</button>
-      </form>
+    <div class="projects__item projects__item--thin-right">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
     </div>
-  </main>
+    <div class="projects__item projects__item--thick">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
+    </div>
+    <div class="projects__item projects__item--thin-right">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
+    </div>
+    <div class="projects__item projects__item--thin-left">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
+    </div>
+    <div class="projects__item projects__item--thin-right projects__item--active">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
+    </div>
+    <div class="projects__item projects__item--thick">
+      <h3 class="projects__item-title">Project title</h3>
+      <p class="projects__item-description">Lorem ipsum dolor sit amet, con-sectetur adipiscing elit. Maecenas diam sapien.</p>
+    </div>
+  </div>
+
+  <section class="in-touch">
+    <div class="in-touch__container">
+      <h2 class="in-touch__title">Get in touch</h2>
+      <p class="in-touch__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum.</p>
+    </div>
+  </section>
+
+  <form action="" class="form">
+    <div class="form__container">
+      <div class="form__group">
+        <input type="text" class="form__input" placeholder="your name" required>
+        <input type="email" class="form__input" placeholder="your email" required>
+        <input type="text" class="form__input" placeholder="subject" required>
+      </div>
+      <textarea class="form__textarea">Your massage text</textarea>
+      <button class="btn btn--send">Click to send</button>
+    </div>
+  </form>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container">
       <p class="page-footer__copyright">
-        Copyright by <span class="page-footer__copyright-name">Abdullah Noman</span>
+        Copyright by <br><span class="page-footer__copyright-name">Abdullah Noman</span>
       </p>
       <div class="social">
         <a href="#" class="social__link social__link--facebook" title="facebook"></a>
-        <a href="#" class="social__link social__link--dribble" title="dribble"></a>
+        <a href="#" class="social__link social__link--dribbble" title="dribbble"></a>
         <a href="#" class="social__link social__link--behance" title="behance"></a>
+
       </div>
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>

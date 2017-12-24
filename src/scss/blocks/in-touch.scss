@@ -1,0 +1,17 @@
+.in-touch {
+  padding-top: 235px;
+  padding-bottom: 90px;
+
+  &__container {
+    @include container();
+  }
+
+  &__title {
+    @include section-title();
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    @include section-description();
+  }
+}
