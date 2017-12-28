@@ -1,7 +1,9 @@
 .projects {
-  display: grid;
-  grid-auto-rows: 235px;
-  grid-auto-columns: 25%;
+
+  @media screen and (min-width: $screen-md-min) {
+    display: grid;
+    grid-auto-columns: 25%;
+  }
 
   &__item {
     display: none;
@@ -11,9 +13,18 @@
     z-index: 3;
     cursor: pointer;
 
-    @media screen and (min-width: $screen-lg-min) {
+    @media screen and (min-width: $screen-md-min) {
       display: block;
-      padding: 50px 24px 60px 35px;
+      padding: 22px 20px 60px 20px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      padding: 30px 24px 70px 24px;
+    }
+
+    @media screen and (min-width: $screen-xlg-min) {
+      display: block;
+      padding: 50px 24px 90px 35px;
     }
 
     &--thick {
@@ -78,7 +89,7 @@
         z-index: -1;
         transform: scale(1);
 
-        @media screen and (min-width: $screen-lg-min) {
+        @media screen and (min-width: $screen-md-min) {
           // transform: scale(0);
         }
       }
@@ -87,7 +98,7 @@
       .projects__item-description {
         opacity: 1;
 
-        @media screen and (min-width: $screen-lg-min) {
+        @media screen and (min-width: $screen-md-min) {
           // opacity: 0;
         }
       }
@@ -100,10 +111,22 @@
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     color: $text-gray--darken;
     opacity: 0;
     transition: opacity 0.35s ease-out;
+
+    @media screen and (min-width: $screen-md-min) {
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      margin-bottom: 18px;
+    }
+
+    @media screen and (min-width: $screen-xlg-min) {
+      margin-bottom: 25px;
+    }
   }
 
   &__item-description {
@@ -125,6 +148,10 @@
       position: absolute;
       bottom: -50px;
       left: 0;
+
+      @media screen and (min-width: $screen-xlg-min) {
+        bottom: -60px;
+      }
     }
   }
 }
