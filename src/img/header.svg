@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <polygon fill="#efefef" points="60 100, 0 82, 0 100"/>
+  <polygon fill="#ffffff" points="60 100, 0 70, 0 82"/>
+  <polygon fill="#cacaca" points="60 100, 0 70, 0 15"/>
+  <polygon fill="#ffde00" points="60 100, 0 15, 0 0"/>
+  <polygon fill="#ffde00" points="60 100, 100 100, 100 18"/>
+</svg>
+
+
+<!-- width:
+1366px view width
+800px svg separate - 60%
+
+height:
+45px - 100% -->
+
