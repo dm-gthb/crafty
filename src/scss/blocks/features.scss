@@ -1,7 +1,15 @@
 .features {
   background-color: $gray--lighten;
-  padding-top: 65px;
-  padding-bottom: 130px;
+  padding: 30px 0;
+
+  @media screen and (min-width: $screen-md-min) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding-top: 65px;
+    padding-bottom: 110px;
+  }
 
   &__container {
     @include container();
@@ -20,17 +28,26 @@
   }
 
   &__item {
-    // width: 45%;
-    // max-width: 415px;
-    padding-left: 125px;
-    margin-bottom: 40px;
+    padding-left: 83px;
+    margin-bottom: 20px;
     position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+      @media screen and (min-width: $screen-md-min) {
+        margin-bottom: 20px;
+      }
+    }
 
     @media screen and (min-width: $screen-md-min) {
       width: 45%;
       max-width: 415px;
-      padding-left: 125px;
+      padding-left: 110px;
       margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      padding-left: 125px;
     }
 
     &::after {
@@ -38,9 +55,19 @@
       left: 0;
       top: 5px;
       content: '';
-      width: 102px;
-      height: 102px;
+      width: 60px;
+      height: 60px;
       border: 1px solid $gray--black;
+
+      @media screen and (min-width: $screen-md-min) {
+        width: 85px;
+        height: 85px;
+      }
+
+      @media screen and (min-width: $screen-lg-min) {
+        width: 102px;
+        height: 102px;
+      }
     }
 
     &--light {
@@ -52,8 +79,8 @@
       &::after {
         background: url("../../img/light.svg");
         background-repeat: no-repeat;
-        background-size: 36px 36px;
-        background-position: 35px 33px;
+        background-size: 35% 35%;
+        background-position: center;
         background-color: $yellow;
         border: transparent;
       }
@@ -62,22 +89,22 @@
     &--tool::after {
       background: url("../../img/tool.svg");
       background-repeat: no-repeat;
-      background-size: 36px 36px;
-      background-position: 35px 33px;
+      background-size: 35% 35%;
+      background-position: center;
     }
 
     &--car::after {
       background: url("../../img/delivery.svg");
       background-repeat: no-repeat;
-      background-size: 36px 36px;
-      background-position: 35px 33px;
+      background-size: 35% 35%;
+      background-position: center;
     }
 
     &--person::after {
       background: url("../../img/person.svg");
       background-repeat: no-repeat;
-      background-size: 36px 36px;
-      background-position: 35px 33px;
+      background-size: 35% 35%;
+      background-position: center;
     }
   }
 
