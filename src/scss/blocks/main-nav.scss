@@ -1,9 +1,9 @@
 .main-nav {
   display: none;
+  background: $gray--lighten;
   @media screen and (min-width: $screen-md-min) {
     display: block;
   }
-
 
   padding: 75px 0;
 

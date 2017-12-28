@@ -7,12 +7,25 @@
   &::before {
     content: '';
     position: absolute;
-    width: 65px;
-    height: 56px;
-    left: 50%;
-    top: 58px;
-    transform: translateX(-50%);
-    background-image: url("../../img/heart.svg");
+    width: 100%;
+    height: 83px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url("../../img/more-info--top.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../img/more-info--bottom.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -24,6 +37,20 @@
   &__title {
     @include section-title();
     margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 65px;
+      height: 56px;
+      left: 50%;
+      top: -90px;
+      transform: translateX(-50%);
+      background-image: url("../../img/heart.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   }
 
   &__description {
