@@ -1,6 +1,7 @@
 .form {
   padding: 30px 0;
   text-align: center;
+  background: $gray--lightest;
 
   @media screen and (min-width: $screen-md-min) {
     padding-top: 110px;
@@ -31,6 +32,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     width: 100%;
+    background: $gray--lightest;
 
     @media screen and (min-width: $screen-md-min) {
       flex: auto;
@@ -52,6 +54,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     width: 100%;
+    background: $gray--lightest;
 
     @media screen and (min-width: $screen-md-min) {
       min-height: 100px;
