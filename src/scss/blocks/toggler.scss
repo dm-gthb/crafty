@@ -12,6 +12,7 @@
   outline: none;
   padding: 0;
   border: none;
+  z-index: 2;
 
   > span {
     display: inline-block;
@@ -46,6 +47,7 @@
   }
 
   &--close {
+
     > span {
       background: transparent;
 

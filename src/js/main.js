@@ -1,10 +1,12 @@
 'use strict';
 
 var toggler = document.getElementById('toggler');
+var pageNav = document.querySelector('.page-nav');
 
 function mobileNavVisibleToggle(event) {
   event.preventDefault();
   toggler.classList.toggle('toggler--close');
+  pageNav.classList.toggle('page-nav--active');
 }
 
 

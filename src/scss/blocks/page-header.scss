@@ -16,12 +16,12 @@
     background-image: url("../../img/header.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    z-index: 100;
 
     @media screen and (min-width: $screen-sm-min) {
       height: 45px;
     }
   }
-
 
   @media screen and (min-width: $screen-md-min) {
     padding-top: 9vh;
