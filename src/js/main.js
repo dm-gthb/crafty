@@ -22,3 +22,11 @@ tl
   .from('.btn--learn-more', 1, {opacity:0, scale:0, ease:Bounce.easeOut});
 
 
+var learnMoreBtn = document.querySelector('.btn--learn-more');
+var pageHeader = document.querySelector('.page-header');
+const viewportHeight = pageHeader.offsetHeight;
+
+learnMoreBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  window.scrollBy({ top: viewportHeight, behavior: 'smooth' });
+});
