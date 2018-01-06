@@ -145,14 +145,16 @@
       }
 
       &:hover::after {
-        background: #fede10;
-        opacity: 1;
+        background:rgba(246, 216, 16, 1);
       }
 
       &:hover {
         .projects__item-title,
         .projects__item-description {
           color: $text-gray--dark;
+        }
+        .projects__item-description::before {
+          opacity: 1;
         }
       }
     }
@@ -193,6 +195,7 @@
     position: relative;
 
     &::before {
+      opacity: 0;
       content: '';
       width: 32px;
       height: 32px;
@@ -201,6 +204,7 @@
       position: absolute;
       bottom: -50px;
       left: 0;
+      transition: opacity .4s .1s ease-out;
 
       @media screen and (min-width: $screen-xlg-min) {
         bottom: -60px;

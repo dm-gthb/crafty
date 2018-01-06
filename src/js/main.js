@@ -2,16 +2,16 @@
 
 // Header toggler
 var toggler = document.getElementById('toggler');
-var pageNav = document.querySelector('.page-nav');
+var mainNav = document.querySelector('.main-nav');
 
-function mobileNavVisibleToggle(event) {
+function mainNavVisibleToggle(event) {
   event.preventDefault();
   toggler.classList.toggle('toggler--close');
-  pageNav.classList.toggle('page-nav--active');
+  mainNav.classList.toggle('main-nav--active');
 }
 
 if (toggler) {
-  toggler.addEventListener('click', mobileNavVisibleToggle);
+  toggler.addEventListener('click', mainNavVisibleToggle);
 }
 
 

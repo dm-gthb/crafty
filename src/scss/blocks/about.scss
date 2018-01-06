@@ -16,24 +16,6 @@
   @media screen and (min-width: $screen-lg-min) {
     padding-top: 50px;
   }
-  // position: relative;
-
-  // &::after {
-  //   content: '';
-  //   border: 1px solid red;
-  //   width: 70%;
-  //   max-width: 855px;
-  //   height: 256px;
-  //   position: absolute;
-  //   top: 50px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   background-image: url('../../img/iMac.png');
-  //   background-repeat: no-repeat;
-  //   background-position: 50% 50%;
-  //   background-size: 100% auto;
-  // }
-
 
   &__container {
     @include container();
