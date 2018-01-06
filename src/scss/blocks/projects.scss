@@ -1,17 +1,75 @@
 .projects {
 
-  @media screen and (min-width: $screen-md-min) {
-    display: grid;
-    grid-auto-columns: 25%;
+  &__nav {
+    display: none;
+    background: $gray--lighten;
+    @media screen and (min-width: $screen-md-min) {
+      display: block;
+    }
+
+    padding: 75px 0;
+
+    &__container {
+      @include container();
+    }
+  }
+
+  &__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: $screen-xlg-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__nav-link {
+    padding: 8px 18px;
+    border: 1px solid transparent;
+    color: $text-gray--mid-dark;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: $font-family--ralewai;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    transition: all .15s ease-in;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    &--active {
+      border-color: $yellow;
+
+      &:hover {
+        color: $text-gray--mid-dark;
+        cursor: default;
+      }
+    }
+  }
+
+  &__items {
+    @media screen and (min-width: $screen-md-min) {
+      display: grid;
+      grid-auto-columns: 25%;
+    }
   }
 
   &__item {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
     display: none;
     padding: 35px;
     padding-bottom: 65px;
     position: relative;
     z-index: 3;
-    cursor: pointer;
 
     @media screen and (min-width: $screen-md-min) {
       display: block;
@@ -63,20 +121,11 @@
       transition: all 0.35s ease-out;
     }
 
-    &:hover::after {
-      transform: scale(1);
-    }
-
-    &:hover {
-      .projects__item-title,
-      .projects__item-description {
-        opacity: 1;
-      }
-    }
-
     &--active {
       display: block;
       position: relative;
+      cursor: pointer;
+      pointer-events: auto;
 
       &::after {
         background:rgba(246, 216, 16, .85);
@@ -88,18 +137,22 @@
         height: 100%;
         z-index: -1;
         transform: scale(1);
-
-        @media screen and (min-width: $screen-md-min) {
-          // transform: scale(0);
-        }
       }
 
       .projects__item-title,
       .projects__item-description {
         opacity: 1;
+      }
 
-        @media screen and (min-width: $screen-md-min) {
-          // opacity: 0;
+      &:hover::after {
+        background: #fede10;
+        opacity: 1;
+      }
+
+      &:hover {
+        .projects__item-title,
+        .projects__item-description {
+          color: $text-gray--dark;
         }
       }
     }
@@ -114,7 +167,7 @@
     margin-bottom: 12px;
     color: $text-gray--darken;
     opacity: 0;
-    transition: opacity 0.35s ease-out;
+    transition: all 0.35s ease-out;
 
     @media screen and (min-width: $screen-md-min) {
       margin-bottom: 12px;
@@ -136,7 +189,7 @@
     color: $text-gray--dark;
     margin: 0;
     opacity: 0;
-    transition: opacity 0.35s ease-out;
+    transition: all 0.35s ease-out;
     position: relative;
 
     &::before {
